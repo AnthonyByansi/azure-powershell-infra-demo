@@ -1,0 +1,49 @@
+{
+    "vmParameters": [
+        {
+            "name": "WebVM1",
+            "vmSize": "Standard_B2s",
+            "adminUsername": "azureuser",
+            "adminPassword": "<YourSecurePasswordHere>",
+            "osType": "Windows",
+            "imagePublisher": "MicrosoftWindowsServer",
+            "imageOffer": "WindowsServer",
+            "imageSku": "2019-Datacenter",
+            "subnet": "WebSubnet",
+            "publicIP": true,
+            "nsg": "WebNSG",
+            "availabilitySet": "WebAvailabilitySet"
+        },
+        {
+            "name": "WebVM2",
+            "vmSize": "Standard_B2s",
+            "adminUsername": "azureuser",
+            "adminPassword": "<YourSecurePasswordHere>",
+            "osType": "Windows",
+            "imagePublisher": "MicrosoftWindowsServer",
+            "imageOffer": "WindowsServer",
+            "imageSku": "2019-Datacenter",
+            "subnet": "WebSubnet",
+            "publicIP": true,
+            "nsg": "WebNSG",
+            "availabilitySet": "WebAvailabilitySet"
+        },
+        {
+            "name": "AppVM",
+            "vmSize": "Standard_B2s",
+            "adminUsername": "azureuser",
+            "adminPassword": "<YourSecurePasswordHere>",
+            "osType": "Windows",
+            "imagePublisher": "MicrosoftWindowsServer",
+            "imageOffer": "WindowsServer",
+            "imageSku": "2019-Datacenter",
+            "subnet": "AppSubnet",
+            "publicIP": false,
+            "nsg": "AppNSG",
+            "availabilitySet": "AppAvailabilitySet"
+        }
+    ],
+    "resourceGroup": "ContosoWebAppRG",
+    "location": "EastUS",
+    "virtualNetwork": "ContosoVNet"
+}
