@@ -1,0 +1,51 @@
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore PowerShell compiled or cache files
+*.ps1xml
+*.psm1
+*.psd1
+*.ps1~
+
+# Ignore sensitive files (make sure to store secrets securely!)
+*.env
+*.secrets
+*.key
+*.pfx
+
+# Ignore JSON files containing sensitive or temporary parameters
+*secrets.json
+*temp*.json
+
+# Ignore system or editor-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.vscode/
+.idea/
+*.code-workspace
+
+# Ignore OS-specific files
+desktop.ini
+
+# Ignore generated or temporary documentation files
+docs/*.html
+docs/*.pdf
+
+# Ignore build or deployment output
+build/
+dist/
+out/
+*.zip
+*.tar.gz
+
+# Ignore generated diagrams (if applicable)
+diagrams/*.svg
+diagrams/*.tmp.*
+
+# Ignore debug and logs for Azure CLI
+.azure/
+.azure-shell.json
